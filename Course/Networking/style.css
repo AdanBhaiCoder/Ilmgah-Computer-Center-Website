@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -17,16 +17,18 @@ body {
     background-size: cover;
     overflow-x: hidden;
 }
+
 /*---------------------Navbar ki stylings */
 .header {
     background-color: #fff;
     width: 100vw;
-    height: 12vh;
+    height: 11vh;
     position: sticky;
     top: 0;
     z-index: 12;
 }
-.container-head{
+
+.container-head {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -59,7 +61,7 @@ body {
 
 /*---------------------navbar stylings */
 
-.container-head .navbar{
+.container-head .navbar {
     margin-left: 60vw;
 }
 
@@ -101,12 +103,11 @@ body {
 /* -----------------Reset the sections */
 
 section {
-    height: 100vh;
-    color:white;
+    color: white;
 }
 
 .section1 {
-    margin: 0 30px;
+    margin: 0 50px;
 }
 
 .section-head {
@@ -114,10 +115,8 @@ section {
 }
 
 .heading {
-    margin-left: 25vw;
+    margin-left: 22vw;
 }
-
-
 
 .back-btn {
     display: flex;
@@ -140,12 +139,12 @@ section {
     display: inline-block;
     color: #fff;
     text-align: center;
-    font-size: 45px;
-    letter-spacing: 1.5px;
-    width: 40vw;
+    font-size: 50px;
+    letter-spacing: 1px;
+    width: 43vw;
     padding: 1vh 0;
     margin-top: 5vh;
-    margin-bottom: 16vh;
+    margin-bottom: 17vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
 }
@@ -154,13 +153,24 @@ section {
     font-family: 'roboto', sans-serif;
     line-height: 35px;
     font-size: 21px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
+    text-align: justify;
 }
 
 .duration {
-    margin-top: 90px;
+    font-size: 26px;
+    margin: 50px 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+ /*         the listing goes here      */
+
+
+
+
+
+
+
 
 /* ------------------The footer goes here */
 footer {
@@ -168,4 +178,5 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-family: 'kanit', sans-serif;
 }

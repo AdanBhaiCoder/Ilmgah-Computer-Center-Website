@@ -21,7 +21,7 @@ body {
 .header {
     background-color: #fff;
     width: 100vw;
-    height: 12vh;
+    height: 11vh;
     position: sticky;
     top: 0;
     z-index: 12;
@@ -104,7 +104,7 @@ section {
 }
 
 .section1 {
-    margin: 0 30px;
+    margin: 0 50px;
 }
 
 .section-head {
@@ -112,7 +112,7 @@ section {
 }
 
 .heading {
-    margin-left: 25vw;
+    margin-left: 21vw;
 }
 
 .back-btn {
@@ -136,26 +136,28 @@ section {
     display: inline-block;
     color: #fff;
     text-align: center;
-    font-size: 45px;
-    letter-spacing: 2px;
-    width: 35vw;
+    font-size: 50px;
+    letter-spacing: 1px;
+    width: 39vw;
     padding: 1vh 0;
     margin-top: 5vh;
-    margin-bottom: 16vh;
+    margin-bottom: 19vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
 }
 
 .overview {
     font-family: 'roboto', sans-serif;
-    line-height: 34px;
-    font-size: 21px;
-    letter-spacing: 1px;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    text-align: justify;
 }
 
 .duration {
     margin-top: 90px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 27px;
 }
 
 .list-program {
@@ -207,7 +209,9 @@ section {
 
 .horizontal .content img {
     width: 40px;
-    border-top-right-radius: 12px;
+}
+.horizontal .content .rounded {
+    border-radius: 10px;
 }
 
 /* ------------------The footer goes here */

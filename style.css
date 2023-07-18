@@ -129,9 +129,10 @@ section {
 
 
 .main-heading .para {
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     line-height: 32px;
+    font-size: 18px;
     letter-spacing: 1px;
     font-family: 'poppins', sans-serif;
     color: #fff;
@@ -146,7 +147,8 @@ section {
 }
 
 .button {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
     outline: none;
     padding: 10px 0px;
     cursor: pointer;

@@ -112,7 +112,7 @@ section {
 }
 
 .heading {
-    margin-left: 21vw;
+    margin-left: 25vw;
 }
 
 .back-btn {
@@ -136,9 +136,9 @@ section {
     display: inline-block;
     color: #fff;
     text-align: center;
-    font-size: 50px;
+    font-size: 48px;
     letter-spacing: 1px;
-    width: 39vw;
+    width: 35vw;
     padding: 1vh 0;
     margin-top: 5vh;
     margin-bottom: 19vh;

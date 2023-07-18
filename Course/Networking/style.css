@@ -80,7 +80,7 @@ body {
 }
 
 .navbar a::before {
-    content: "";
+    content: " ";
     position: absolute;
     bottom: 0;
     left: 0px;

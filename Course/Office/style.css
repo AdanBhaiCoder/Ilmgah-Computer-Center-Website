@@ -102,7 +102,6 @@ body {
 
 /* -----------------Reset the sections */
 section {
-    height: 100vh;
     color: white;
 }
 
@@ -186,7 +185,7 @@ section {
 .list-program .vertical {
     width: 2px;
     background-color: white;
-    height: 458px;
+    height: 480px;
     margin: 12px;
 }
 
@@ -194,7 +193,8 @@ section {
     width: 100px;
     background-color: white;
     height: 2px;
-    margin-bottom: 150px;
+    margin-top:40px;
+    margin-bottom: 130px;
 }
 
 .horizontal .content {

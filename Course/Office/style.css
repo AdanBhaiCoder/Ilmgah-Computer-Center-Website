@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -17,6 +17,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
 }
+
 /*---------------------Navbar ki stylings */
 .header {
     background-color: #fff;
@@ -26,7 +27,8 @@ body {
     top: 0;
     z-index: 12;
 }
-.container-head{
+
+.container-head {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -59,7 +61,7 @@ body {
 
 /*---------------------navbar stylings */
 
-.container-head .navbar{
+.container-head .navbar {
     margin-left: 60vw;
 }
 
@@ -101,6 +103,7 @@ body {
 /* -----------------Reset the sections */
 section {
     height: 100vh;
+    color: white;
 }
 
 .section1 {
@@ -112,7 +115,7 @@ section {
 }
 
 .heading {
-    margin-left: 29%;
+    margin-left: 25vw;
 }
 
 
@@ -140,11 +143,10 @@ section {
     text-align: center;
     font-size: 45px;
     letter-spacing: 1px;
-    width: 25vw;
+    width: 35vw;
     padding: 1vh 0;
-    margin: 0 -50px;
     margin-top: 5vh;
-    margin-bottom: 12vh;
+    margin-bottom: 16vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
 }
@@ -166,5 +168,8 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    text-align: center;   
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
 }

@@ -8,7 +8,6 @@
 }
 
 body {
-    min-height: 100vh;
     background: rgba(0, 0, 0, 0.6) url('../Images/graphic-BG.jpeg');
     background-blend-mode: darken;
     background-position: center;
@@ -101,7 +100,6 @@ body {
 
 /* -----------------Reset the sections */
 section {
-    height: 100vh;
     color: white;
 }
 
@@ -166,16 +164,15 @@ section {
 
 .list-head {
     margin-top: 90px;
-
 }
 
 .vertical-container {
     display: flex;
-    /* position: relative; */
+    position: relative;
     width: 450px;
     height: 550px;
     justify-content: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
 }
 
@@ -190,7 +187,7 @@ section {
     width: 100px;
     background-color: white;
     height: 2px;
-    margin-top:40px;
+    margin-top: 40px;
     margin-bottom: 130px;
 }
 
@@ -215,9 +212,10 @@ section {
 
 /* ------------------The footer goes here */
 footer {
-    font-family: Verdana, sans-serif;
+
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

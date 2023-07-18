@@ -102,7 +102,7 @@ body {
 
 /* -----------------Reset the sections */
 section {
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
 }
 
@@ -163,13 +163,70 @@ section {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+.list-program {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-head {
+    margin-top: 90px;
+
+}
+
+.vertical-container {
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 550px;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.list-program .vertical {
+    width: 2px;
+    background-color: white;
+    height: 458px;
+    margin: 12px;
+}
+
+.vertical .horizontal {
+    width: 100px;
+    background-color: white;
+    height: 2px;
+    margin-bottom: 150px;
+}
+
+.horizontal .content {
+    position: relative;
+    display: flex;
+    top: -20px;
+    left: 110px;
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal .content h3 {
+    width: 280px;
+}
+
+.horizontal .content img {
+    width: 40px;
+    border-top-right-radius: 12px;
+}
+
+
+
+
+
 /* ------------------The footer goes here */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;   
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 
 }

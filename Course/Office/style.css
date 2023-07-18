@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*---------------------Navbar ki stylings */
+.header {
+    background-color: #fff;
+    width: 100vw;
+    height: 12vh;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+.container-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+/*---------------------logo styling */
+
+
+.header .logo {
+    position: absolute;
+    left: 30px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px;
+}
+
+.header .logo span {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 1.5vw;
+}
+
+
+/*---------------------navbar stylings */
+
+.container-head .navbar{
+    margin-left: 60vw;
+}
+
+/*---------------------links stylings */
+
+.navbar a {
+    position: relative;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.8px;
+    text-decoration: none;
+    margin-left: 19px;
+    padding: 5px 10px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    height: 2px;
+    border-radius: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: #000000;
+    transition: transform 0.5s;
+    transform-origin: right;
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* -----------------Reset the sections */
+section {
+    height: 100vh;
+}
+
+.section1 {
+    margin: 0 30px;
+}
+
+.section-head {
+    display: flex;
+}
+
+.heading {
+    margin-left: 29%;
+}
+
+
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 8vw;
+    height: 8vh;
+    cursor: pointer;
+}
+
+.back-btn svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+.heading h1 {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 1px;
+    width: 25vw;
+    padding: 1vh 0;
+    margin: 0 -50px;
+    margin-top: 5vh;
+    margin-bottom: 12vh;
+    border-bottom: 2px solid #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.overview {
+    font-family: 'roboto', sans-serif;
+    line-height: 34px;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.duration {
+    margin-top: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ------------------The footer goes here */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

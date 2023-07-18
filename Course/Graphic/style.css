@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6) url('../Images/graphic-BG.jpeg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/*---------------------Navbar ki stylings */
+.header {
+    background-color: #fff;
+    width: 100vw;
+    height: 12vh;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+
+.container-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+/*---------------------logo styling */
+
+
+.header .logo {
+    position: absolute;
+    left: 30px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px;
+}
+
+.header .logo span {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 1.5vw;
+}
+
+/*---------------------navbar stylings */
+
+.container-head .navbar {
+    margin-left: 60vw;
+}
+
+/*---------------------links stylings */
+
+.navbar a {
+    position: relative;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.8px;
+    text-decoration: none;
+    margin-left: 19px;
+    padding: 5px 10px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    height: 2px;
+    border-radius: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: #000000;
+    transition: transform 0.5s;
+    transform-origin: right;
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* -----------------Reset the sections */
+section {
+    height: 100vh;
+    color: white;
+}
+
+.section1 {
+    margin: 0 30px;
+}
+
+.section-head {
+    display: flex;
+}
+
+.heading {
+    margin-left: 29%;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 8vw;
+    height: 8vh;
+    cursor: pointer;
+}
+
+.back-btn svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+.heading h1 {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 3px;
+    width: 35vw;
+    padding: 1vh 0;
+    margin: 0 -50px;
+    margin-top: 5vh;
+    margin-bottom: 12vh;
+    border-bottom: 2px solid #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.overview {
+    font-family: 'roboto', sans-serif;
+    line-height: 34px;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.duration {
+    margin-top: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-program {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-head {
+    margin-top: 90px;
+
+}
+
+.vertical-container {
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 550px;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.list-program .vertical {
+    width: 2px;
+    background-color: white;
+    height: 458px;
+    margin: 12px;
+}
+
+.vertical .horizontal {
+    width: 100px;
+    background-color: white;
+    height: 2px;
+    margin-bottom: 150px;
+}
+
+.horizontal .content {
+    position: relative;
+    display: flex;
+    top: -20px;
+    left: 110px;
+    width: 235px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal .content h3 {
+    width: 180px;
+}
+
+.horizontal .content img {
+    width: 40px;
+    border-top-right-radius:12px ;
+}
+
+/* ------------------The footer goes here */
+footer {
+    font-family: Verdana, sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

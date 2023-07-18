@@ -114,7 +114,7 @@ section {
 }
 
 .heading {
-    margin-left: 29%;
+    margin-left: 25vw;
 }
 
 .back-btn {
@@ -139,12 +139,11 @@ section {
     color: #fff;
     text-align: center;
     font-size: 45px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     width: 35vw;
     padding: 1vh 0;
-    margin: 0 -50px;
     margin-top: 5vh;
-    margin-bottom: 12vh;
+    margin-bottom: 16vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
 }

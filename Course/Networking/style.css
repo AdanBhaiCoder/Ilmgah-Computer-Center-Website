@@ -107,7 +107,7 @@ section {
 }
 
 .section1 {
-    margin: 0 50px;
+    margin: 0 50px 40px 50px;
 }
 
 .section-head {
@@ -158,15 +158,50 @@ section {
 }
 
 .duration {
-    font-size: 26px;
-    margin: 50px 0;
+    font-size: 28px;
+    margin: 100px 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
- /*         the listing goes here      */
+/*         the listing goes here      */
+.list-title {
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.listing {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.main-list{
+    
+}
+.listing>li {
+    list-style: none;
+    font-size: 18px;
+}
+.listing ul li{
+    padding: 10px 0;
+}
 
+.listing ul {
+    padding: 15px 0;
+    width: 900px;
+    margin: auto;
+}
+
+.main-list .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul[type="circle"] {
+    width: 700px;
+    margin: auto;
+}
 
 
 

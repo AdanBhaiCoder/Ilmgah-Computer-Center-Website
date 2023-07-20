@@ -141,14 +141,14 @@ section {
     width: 35vw;
     padding: 1vh 0;
     margin-top: 5vh;
-    margin-bottom: 19vh;
+    margin-bottom: 17vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
 }
 
 .overview {
     font-family: 'roboto', sans-serif;
-    line-height: 40px;
+    line-height: 48px;
     font-size: 20px;
     letter-spacing: 1.2px;
     text-align: justify;

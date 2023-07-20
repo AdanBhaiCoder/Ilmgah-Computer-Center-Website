@@ -22,7 +22,7 @@ body {
 .header {
     background-color: #fff;
     width: 100vw;
-    height: 12vh;
+    height: 11vh;
     position: sticky;
     top: 0;
     z-index: 12;
@@ -101,11 +101,12 @@ body {
 
 /* -----------------Reset the sections */
 section {
+    color: white;
     height: 100vh;
 }
 
 .section1 {
-    margin: 0 30px;
+    margin: 0 50px;
 }
 
 .section-head {
@@ -113,7 +114,7 @@ section {
 }
 
 .heading {
-    margin-left: 29%;
+    margin-left: 29vw;
 }
 
 
@@ -139,26 +140,27 @@ section {
     display: inline-block;
     color: #fff;
     text-align: center;
-    font-size: 45px;
+    font-size: 48px;
     letter-spacing: 1px;
-    width: 25vw;
+    width: 28vw;
     padding: 1vh 0;
-    margin: 0 -50px;
     margin-top: 5vh;
-    margin-bottom: 12vh;
+    margin-bottom: 20vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
 }
 
 .overview {
     font-family: 'roboto', sans-serif;
-    line-height: 34px;
+    line-height: 40px;
     font-size: 21px;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
+    text-align: justify;
 }
 
 .duration {
-    margin-top: 90px;
+    font-size: 28px;
+    margin: 100px 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -168,4 +170,5 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-family:'kanit',sans-serif;
 }

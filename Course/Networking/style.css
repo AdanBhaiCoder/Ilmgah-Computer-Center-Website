@@ -144,14 +144,14 @@ section {
     width: 40vw;
     padding: 1vh 0;
     margin-top: 5vh;
-    margin-bottom: 17vh;
+    margin-bottom: 12vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
 }
 
 .overview {
     font-family: 'roboto', sans-serif;
-    line-height: 35px;
+    line-height: 40px;
     font-size: 21px;
     letter-spacing: 1.2px;
     text-align: justify;
@@ -179,8 +179,8 @@ section {
 .main-list{
     
 }
-.listing>li {
-    list-style: none;
+.listing li {
+    /* list-style: none; */
     font-size: 18px;
 }
 .listing ul li{

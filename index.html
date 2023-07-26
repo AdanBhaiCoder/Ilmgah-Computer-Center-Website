@@ -50,7 +50,7 @@
                 >Download Admission Form</a
               >
             </button>
-            <button class="button btn2">Contact info</button>
+            <button id="contact" class="button btn2">Contact info</button>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
     <!----------------The Section 2---------------->
 
     <section class="section2 text-gray-400 bg-gray-900 body-font">
-      <a href="#" style="height: 9vh; display: block" name="course"></a>
+      <a href="#" style="height: 9vh; display: block" id="course"></a>
       <h1 class="heading">Courses</h1>
       <div class="container-section m-auto">
         <div class="flex flex-wrap">
@@ -132,14 +132,14 @@
               <div class="all-text p-6">
                 <div class="description">
                   <h1 class="title-font text-lg font-medium text-white mb-3">
-                    Graphic Designing
+                  Graphic Designing
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Welcome to the Designing Course, where creativity meets
                     functionality! This course is designed to unleash your inner
                     artist and equip you with the essential skills and knowledge
                     needed to excel in the field of design. Whether you have a
-                    passion for graphic design, web design, or user experience
+                    passion foraic design, web design, or user experience
                     design, this program will provide you with a solid
                     foundation to express your ideas visually and create
                     impactful designs.
@@ -296,7 +296,10 @@
               <div class="all-text p-6">
                 <div class="description">
                   <h1 class="title-font text-lg font-medium text-white mb-3">
-                    Typing Course (English & Urdu)
+                    Typing Course
+                    <span style="font-size: 20px;">
+                      (English & Urdu)
+                    </span>
                   </h1>
                   <p class="leading-relaxed mb-3">
                     This course is designed to help you develop touch typing
@@ -337,35 +340,39 @@
     <!----------------The Section 3---------------->
 
     <section class="computer-center section3">
-      <h2 class="heading text-gray-400">
-        <a href="#" name="about">About Us</a>
+      <a href="#" id="about"></a>
+      <h2 class="heading text-gray-400">About Us
       </h2>
-      <p class="about">
+    <div class="about">
+      <p class="paragraph">
         Welcome to our state-of-the-art computer center, equipped with the
         latest technology and resources to support your digital learning and
-        computing need i ducimus magni et consequatur dolor adipisci nisi
-        voluptatibus officia libero maiores error incidunt alias esse tempora!
-        Velit possimus illum cupiditate animi quam est, modi aliquid
-        reprehenderit doloribus. Et, laboriosam facilis vel minus consequatur
-        numquam vitae molestiae saepe placeat quasi nam maxime cumque molestias
-        adipisci porro nobis ullam quibusdam suscipit sequi tenetur! Minima
-        excepturi quaerat rei accusamus quasi repudiandae voluptatibus beatae!
+        computing . At Ilmgah Computer Center, we believe in empowering individuals with the knowledge and skills they need to excel in today's digital world. With a diverse range of courses tailored to meet the demands of the modern job market, we are committed to providing high-quality education and training to our students. Our center serves as a gateway for both beginners and experienced learners who wish to enhance their computer-related skills.
+
+        <div class="Question">Why Choose Ilmgah Computer Center?</div>
+
+        <span>Experienced Faculty:</span><p class="para"> Our dedicated and experienced faculty members are passionate about teaching and have expertise in their respective fields.</p>
+
+        <span>State-of-the-Art Facilities:</span><p class="para"> Enjoy learning in a comfortable and well-equipped environment with access to the latest technology.</p>
+
+        <span>Flexible Schedules:</span><p class="para"> We offer flexible class timings to accommodate busy professionals and students.
+</p>
+        <span>Hands-on Practical Training:</span><p class="para"> Gain practical experience through real-world projects and hands-on training sessions.</p>
+     </p>
+      <p class="paragraph">
+        Whether you are an aspiring programmer, a creative enthusiast, or someone looking to upgrade their skills, Ilmgah Computer Center is the perfect place to nurture your talents. Join us today and embark on an exciting learning journey that will shape your future in the world of technology.
       </p>
-      <p class="about">
-        Welcome to our state-of-the-art computer center, equipped with the
-        latest technology and resources to support your digital learning and
-        computing need i ducimus magni et consequatur dolor adipisci nisi
-        voluptatibus officia libero maiores error incidunt alias esse tempora!
-        Velit possimus illum cupiditate animi quam est, modi aliquid
-        reprehenderit doloribus. Et, laboriosam facilis vel minus consequatur
-        numquam vitae molestiae saepe placeat quasi nam maxime cumque molestias
-        adipisci porro nobis ullam quibusdam suscipit sequi tenetur! Minima
-        excepturi quaerat rei accusamus quasi repudiandae voluptatibus beatae!
-      </p>
+    </div>
     </section>
 
-    <hr />
 
     <footer>Ilmgah Computer Center | All rights reserved &copy;</footer>
   </body>
+  <script>
+    console.log("Yeh sab kiya dekhna prha ha");
+    let contact = document.getElementById("contact");
+    contact.addEventListener("click", () => {
+      window.location.assign('Contact/index.html');
+    });
+  </script>
 </html>

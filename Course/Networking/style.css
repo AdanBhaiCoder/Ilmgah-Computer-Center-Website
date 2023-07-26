@@ -213,5 +213,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-family: 'kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
 }

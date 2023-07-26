@@ -23,7 +23,7 @@ body {
 .header {
     background-color: #fff;
     width: 100vw;
-    height: 12vh;
+    height: 11vh;
     position: sticky;
     top: 0;
     z-index: 12;
@@ -162,7 +162,7 @@ section {
     border-radius: 3px;
 }
 
-button:focus {
+button a:focus {
     outline: none;
 }
 

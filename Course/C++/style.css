@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background: rgba(0, 0, 0, 0.6) url('../Images/graphic-BG.jpeg');
+    background: rgba(0, 0, 0, 0.7) url('../Images/Cpp-BG.png');
     background-blend-mode: darken;
     background-position: center;
     background-attachment: fixed;
@@ -168,7 +168,7 @@ section {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size: 18px;

@@ -13,7 +13,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background: rgba(0, 0, 0, 0.6) url('Images/background.jpg');
+    background: rgba(0, 0, 0, 0.7) url('Images/background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: darken;
@@ -72,7 +72,7 @@ body {
     color: #000;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    font-size: 17.5px;
+    font-size: 18px;
     text-decoration: none;
     margin-left: 20px;
     padding: 5px 10px;
@@ -269,18 +269,14 @@ button a:focus {
     padding: 40px;
 }
 
-.section3 a {
-    display: block;
-    height: 90px;
-}
-
-
 .section3 .heading {
     text-align: center;
     font-size: 55px;
     width: 18vw;
     margin: auto;
-    margin-bottom: 5vh;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    letter-spacing: 0.5px;
     border-bottom: 2px solid white;
     font-family: 'Kanit', sans-serif;
 }
@@ -322,7 +318,7 @@ button a:focus {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size: 18px;

@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact U</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="../Logo/Logo-icon.ico" type="image/x-icon" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -47,7 +51,44 @@
         </div>
       </div>
       <!-- This is the body of the Section -->
-      <div class="section1"></div>
+      <div class="section1">
+        <div class="container">
+          <!-- here is the left side of container -->
+          <div class="map">
+            <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359.0146419525954!2d74.31208433273468!3d31.43746949239571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906cd4c4fd3ab%3A0x46364f22b7c6f0cf!2s7%2C%20Sector%20D%202%20Block%204%20Green%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1690598043767!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- here is the right side of container -->
+          <div class="details">
+            <div class="data-list">
+              <div class="icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="data">
+                <div class="data-head">Phone</div>
+                <div class="data-text">0322-6258005</div>
+              </div>
+            </div>
+            <div class="data-list">
+              <div class="icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="data">
+                <div class="data-head">Email</div>
+                <div class="data-text">ali.adilpak@gmail.com</div>
+              </div>
+            </div>
+            <div class="data-list">
+              <div class="icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="data">
+                <div class="data-head">Address</div>
+                <div class="data-text">Green Town ,Township ,Lahore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>Ilmgah Computer Center 2023 | All rights reserved &copy;</footer>
   </body>

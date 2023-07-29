@@ -104,11 +104,15 @@ body {
 /* -----------------Reset the sections */
 section {
     color: white;
-    height: 100vh;
 }
 
 .section1 {
-    margin: 0 50px;
+    margin: 0 70px;
+    backdrop-filter: blur(5px);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px;
+    margin-bottom: 50px;
 }
 
 .section-head {
@@ -116,17 +120,22 @@ section {
 }
 
 .heading {
-    margin-left: 29vw;
+    margin-left: 35vw;
 }
 
 .back-btn {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    width: 8vw;
-    height: 8vh;
+    width: 4vw;
+    height: 10vh;
     cursor: pointer;
+}
+
+.back-btn:active svg {
+    color: #ccc;
 }
 
 .back-btn svg {
@@ -140,7 +149,7 @@ section {
     display: inline-block;
     color: #fff;
     text-align: center;
-    font-size: 55px;
+    font-size: 50px;
     letter-spacing: 1px;
     width: 28vw;
     margin-top: 5vh;

@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background: rgba(0, 0, 0, 0.7) url('../Images/Networking-BG.jpg');
+    background: rgba(0, 0, 0, 0.5) url('../Images/Netwoking-BG.jpg');
     background-blend-mode: darken;
     background-position: center;
     background-attachment: fixed;
@@ -107,7 +107,12 @@ section {
 }
 
 .section1 {
-    margin: 0 50px 40px 50px;
+    margin: 0 70px;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px;
+    margin-bottom: 50px;
 }
 
 .section-head {
@@ -115,19 +120,23 @@ section {
 }
 
 .heading {
-    margin-left: 22vw;
+    margin-left: 31vw;
 }
 
 .back-btn {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    width: 8vw;
-    height: 8vh;
+    width: 4vw;
+    height: 10vh;
     cursor: pointer;
 }
 
+.back-btn:active svg{
+    color: #ccc;
+}
 .back-btn svg {
     width: 100%;
     height: 100%;
@@ -139,7 +148,7 @@ section {
     display: inline-block;
     color: #fff;
     text-align: center;
-    font-size: 48px;
+    font-size: 50px;
     letter-spacing: 1px;
     width: 40vw;
     padding: 1vh 0;
@@ -147,12 +156,13 @@ section {
     margin-bottom: 8vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
+    text-shadow: 6px 6px 5px black;
 }
 
 .overview {
     font-family: 'roboto', sans-serif;
     line-height: 42px;
-    font-size: 21px;
+    font-size: 21.3px;
     letter-spacing: 1.2px;
     text-align: justify;
 }
@@ -177,14 +187,14 @@ section {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.main-list{
-    
-}
+.main-list {}
+
 .listing li {
     /* list-style: none; */
     font-size: 18px;
 }
-.listing ul li{
+
+.listing ul li {
     padding: 10px 0;
 }
 

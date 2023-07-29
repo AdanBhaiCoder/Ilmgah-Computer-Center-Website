@@ -9,10 +9,10 @@
 
 body {
     min-height: 100vh;
-    background: rgba(0, 0, 0, 0.7) url('../Images/office.png');
+    background: rgba(0, 0, 0, 0.5) url('../Images/office.png');
     background-blend-mode: darken;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment:fixed;    
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -106,7 +106,12 @@ section {
 }
 
 .section1 {
-    margin: 0 50px;
+    margin: 0 70px;
+    backdrop-filter: blur(5px);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #000;
+    margin-bottom: 50px;
 }
 
 .section-head {
@@ -114,21 +119,23 @@ section {
 }
 
 .heading {
-    margin-left: 23vw;
+    margin-left: 32vw;
 }
-
-
 
 .back-btn {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    width: 8vw;
-    height: 8vh;
+    width: 4vw;
+    height: 10vh;
     cursor: pointer;
 }
 
+.back-btn:active svg{
+    color: #ccc;
+}
 .back-btn svg {
     width: 100%;
     height: 100%;
@@ -145,9 +152,10 @@ section {
     width: 38vw;
     padding: 1vh 0;
     margin-top: 5vh;
-    margin-bottom: 12vh;
+    margin-bottom: 8vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
+    text-shadow: 6px 6px 5px black;
 }
 
 .overview {

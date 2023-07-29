@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background: rgba(0, 0, 0, 0.7) url('../Images/Cpp-BG.png');
+    background: rgba(0, 0, 0, 0.5) url('../Images/Cpp-BG.png');
     background-blend-mode: darken;
     background-position: center;
     background-attachment: fixed;
@@ -105,7 +105,12 @@ section {
 }
 
 .section1 {
-    margin: 0 50px;
+    margin: 0 70px;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px;
+    margin-bottom: 50px;
 }
 
 .section-head {
@@ -113,19 +118,24 @@ section {
 }
 
 .heading {
-    margin-left: 30vw;
+    margin-left: 36vw;
 }
 
 
 
 .back-btn {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    width: 8vw;
-    height: 8vh;
+    width: 4vw;
+    height: 10vh;
     cursor: pointer;
+}
+
+.back-btn:active svg{
+    color: #ccc;
 }
 
 .back-btn svg {
@@ -139,13 +149,14 @@ section {
     display: inline-block;
     color: #fff;
     text-align: center;
-    font-size: 60px;
+    font-size: 58px;
     letter-spacing: 2px;
     width: 25vw;
     margin-top: 5vh;
-    margin-bottom: 12vh;
+    margin-bottom: 10vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
+    text-shadow: 6px 6px 5px black;
 }
 
 .overview {
@@ -168,8 +179,8 @@ section {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
     text-align: center;
+    padding: 10px;
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
     letter-spacing: 0.8px;

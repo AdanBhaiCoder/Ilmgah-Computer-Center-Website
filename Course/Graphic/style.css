@@ -8,7 +8,7 @@
 }
 
 body {
-    background: rgba(0, 0, 0, 0.6) url('../Images/graphic-BG.jpeg');
+    background: rgba(0, 0, 0, 0.4) url('../Images/graphic-BG.jpeg');
     background-blend-mode: darken;
     background-position: center;
     background-attachment: fixed;
@@ -104,7 +104,13 @@ section {
 }
 
 .section1 {
-    margin: 0 50px;
+    margin: 0 70px;
+    margin-top: 10px;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px;
+    margin-bottom: 50px;
 }
 
 .section-head {
@@ -112,17 +118,22 @@ section {
 }
 
 .heading {
-    margin-left: 23vw;
+    margin-left: 33vw;
 }
 
 .back-btn {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    width: 8vw;
-    height: 8vh;
+    width: 4vw;
+    height: 10vh;
     cursor: pointer;
+}
+
+.back-btn:active svg {
+    color: #ccc;
 }
 
 .back-btn svg {
@@ -140,9 +151,10 @@ section {
     letter-spacing: 1px;
     width: 36vw;
     margin-top: 5vh;
-    margin-bottom: 17vh;
+    margin-bottom: 8vh;
     border-bottom: 2px solid #fff;
     font-family: 'Kanit', sans-serif;
+    text-shadow: 6px 6px 5px black;
 }
 
 .overview {

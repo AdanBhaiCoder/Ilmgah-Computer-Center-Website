@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "chalao": "vite"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.6) url('/Images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    transition: all 0.5s;
+}
+
+/*---------------The heading of the main Section */
+
+.section1 {
+    height: 100vh;
+    padding-top: 150px;
+}
+
+#course:focus,
+#about:focus {
+    pointer-events: none;
+    outline: none;
+}
+
+.main-container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.main-content {
+    max-width: 1100px;
+}
+
+.main-content h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+}
+
+
+.main-content .para {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 32px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+}
+
+/* ----------------Buttons styling */
+.btn-container {
+    display: flex;
+    gap: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.button {
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+button a:focus {
+    outline: none;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn1 {
+    background-color: #3ebee5;
+    width: 270px;
+}
+
+.btn1:hover {
+    background-color: #39b0d4;
+}
+
+.btn2 {
+    color: #333;
+    background-color: #fff;
+    text-transform: capitalize;
+    width: 170px;
+}
+
+.btn2:hover {
+    background-color: #e2e8f0;
+}
+
+/*---------------The second Section */
+
+.section2 {
+    color: #bdbdbd;
+    background-color: #1a202c;
+    padding-bottom: 50px;
+}
+
+.section2 .heading {
+    text-align: center;
+    font-size: 55px;
+    width: 240px;
+    margin: auto;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.section2 .container-section {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.section2 .cards-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-row{
+    display: flex;
+}
+.section2 .card-width {
+    max-width: 444px;
+    margin-bottom: 10px;
+}
+
+.card-struct {
+    border: 2px solid #2d3748;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img {
+    height: 200px;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.all-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px 25px;
+}
+
+.description {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.all-text p {
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 25px;
+}
+
+.all-text h1 {
+    font-size: 25px;
+    line-height: 40px;
+    font-family: system-ui;
+    margin-bottom: 12px;
+    color: white;
+    font-weight: 500;
+}
+
+.all-text .card-link {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.card-link a {
+    cursor: pointer;
+    color: #000;
+    background-color: white;
+    padding: 2.5px 8px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    text-decoration:none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.card-link a:hover {
+    background-color: #e2e8f0;
+}
+
+.card-link a svg {
+    transform: translate(-3px, 1px);
+    transition: 0.25s;
+    color: #000;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+
+}
+
+.card-link a:hover svg {
+    transform: translate(6px, 1px);
+}
+
+
+
+/*---------------The Third Section */
+
+
+.section3 {
+    padding: 0 40px;
+}
+.about-container{
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+
+.section3 .heading {
+    text-align: center;
+    font-size: 50px;
+    max-width:250px;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid white;
+    color: #bdbdbd;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.section3 .about {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.about .Question {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about span {
+    font-size: 23px;
+    color: #eee;
+    font-family: 'Kanit',sans-serif;
+}
+
+.about .para {
+    margin: 14px 0;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.about .paragraph {
+    margin: 4vh 0;
+    line-height: 40px;
+    font-size: 19px;
+}
+

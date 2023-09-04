@@ -8,31 +8,47 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="source/input.css">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Logo/Logo-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="stylings/header.css">
+    <link rel="stylesheet" href="stylings/main-styling.css">
+    <link rel="stylesheet" href="stylings/media-query-for-850.css">
+    <link rel="stylesheet" href="stylings/footer.css">
+    <link rel="icon" href="Logo/Logo-icon.ico" type="image/x-icon" >
     <title>Ilmgah Computer Center</title>
   </head>
   <body>
     <header class="header">
-      <div class="container-head">
+      <div class="container-head active">
         <a class="text-gray-900 logo" href="index.html">
           <img src="Logo/Logo-icon.ico" alt="" />
           <span class="logo-text">Ilmgah Computer Center</span>
         </a>
+        <div class="right-navbar">
+          <nav class="navbar main">
+            <a class="links" href="#">Home</a>
+            <a class="links" href="#about">About</a>
+            <a class="links" href="#course">Courses</a>
+            <a class="links" href="#">Timings</a>
+        </nav>
+        <div class="menu-link" id="menu">
+          <img src="Images/menu-outline.svg" alt="">
+        </div>
+      </div>
+      </div>
+      <div class="dropdown" id="dropdown-navbar">
         <nav class="navbar">
-          <a class="links" href="#">Home</a>
-          <a class="links" href="#about">About</a>
-          <a class="links" href="#course">Courses</a>
-          <a class="links" href="#">Timings</a>
+          <a class="droplinks links" href="#">Home</a>
+          <a class="droplinks links" href="#about">About</a>
+          <a class="droplinks links" href="#course">Courses</a>
+          <a class="droplinks links" href="#">Timings</a>
         </nav>
       </div>
     </header>
 
     <!----------------The Section 1---------------->
 
-    <section class="text-gray-600 body-font section1">
+    <section class="body-font section1">
       <div class="main-container">
-        <div class="main-heading left">
+        <div class="main-content left">
           <h1>
             Welcome to
             <span style="color: #3ebee5">Ilmgah Computer Center</span>
@@ -59,138 +75,135 @@
 
     <!----------------The Section 2---------------->
 
-    <section class="section2 text-gray-400 bg-gray-900 body-font">
-      <a href="#" style="height: 9vh; display: block" id="course"></a>
-      <h1 class="heading">Courses</h1>
-      <div class="container-section m-auto">
-        <div class="flex flex-wrap">
-          <!-- here is the card number 1 -->
+    <section class="section2">
+      <a href="#" id="course"></a>
+      <div class="container-section">
+        <h1 class="heading">Courses</h1>
+        <div class="cards-container">
+            <!-- here is the card number 1 -->
 
-          <div class="cards card-1 p-4 card-width">
-            <div
-              class="h-full border-2 border-gray-800 rounded-lg overflow-hidden"
-            >
-              <!-- The image goes here -->
+            <div class="cards card-1 card-width">
+              <div class="card-struct">
 
-              <img
-                class="card-img lg:h-48 md:h-36 w-full object-cover"
-                src="Images/Office.png"
-                alt="Office Management"
-              />
-              <!-- The all text of cards -->
-              <div class="all-text p-6">
-                <div class="description">
-                  <h1 class="title-font font-medium text-white mb-3">
-                    Office Management
-                  </h1>
-                  <p class="leading-relaxed mb-3">
-                    Welcome to the Office Management course! This comprehensive
-                    program is designed to equip you with the essential skills
-                    and knowledge needed to effectively utilize the powerful
-                    suite of Microsoft Office applications. In today's digital
-                    world, proficiency in programs such as Word, Excel,
-                    PowerPoint, and Outlook is highly valued in almost every
-                    professional setting.
-                  </p>
+                <!-- The image goes here -->
+  
+                <div class="card-img"><img
+                  class="card-img"
+                  src="Images/Office.png"
+                  alt="Office Management"
+                />
+
                 </div>
-                <div class="flex justify-end items-center flex-wrap card-link">
-                  <a
-                    href="Course/Office/index.html"
-                    class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0"
-                    >Learn More
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- here is the card number 2 -->
-
-          <div class="cards card-2 p-4 card-width">
-            <div
-              class="h-full border-2 border-gray-800 rounded-lg overflow-hidden"
-            >
-              <!-- The image goes here -->
-
-              <img
-                class="card-img lg:h-48 md:h-36 w-full object-cover"
-                src="Images/Graphic-design.jpg"
-                alt="Graphic Designing"
-              />
-              <!-- The all text of cards -->
-              <div class="all-text p-6">
-                <div class="description">
-                  <h1 class="title-font text-lg font-medium text-white mb-3">
-                  Graphic Designing
-                  </h1>
-                  <p class="leading-relaxed mb-3">
-                    Welcome to the Designing Course, where creativity meets
-                    functionality! This course is designed to unleash your inner
-                    artist and equip you with the essential skills and knowledge
-                    needed to excel in the field of design. Whether you have a
-                    passion foraic design, web design, or user experience
-                    design, this program will provide you with a solid
-                    foundation to express your ideas visually and create
-                    impactful designs.
-                  </p>
-                </div>
-                <div class="flex items-center justify-end flex-wrap card-link">
-                  <a
-                    href="Course/Graphic/index.html"
-                    class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0"
-                    >Learn More
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+                <!-- The all text of cards -->
+                <div class="all-text">
+                  <div class="description">
+                    <h1 class="card-title">
+                      Office Management
+                    </h1>
+                    <p class="card-about">
+                      Welcome to the Office Management course! This comprehensive
+                      program is designed to equip you with the essential skills
+                      and knowledge needed to effectively utilize the powerful
+                      suite of Microsoft Office applications. In today's digital
+                      world, proficiency in programs such as Word, Excel,
+                      PowerPoint, and Outlook is highly valued in almost every
+                      professional setting.
+                    </p>
+                  </div>
+                  <div class="card-link">
+                    <a
+                      href="Course/Office/index.html"
+                      >Learn More
+                      <svg
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
+  
+            <!-- here is the card number 2 -->
+  
+            <div class="cards card-2 card-width">
+              <div
+                class="card-struct"
+              >
+                <!-- The image goes here -->
+              <div class="card-img">
+                <img
+                  src="Images/Graphic-design.jpg"
+                  alt="Graphic Designing"
+                />
+              </div>
+                <!-- The all text of cards -->
+                <div class="all-text">
+                  <div class="description">
+                    <h1 class="card-title">
+                    Graphic Designing
+                    </h1>
+                    <p class="card-about">
+                      Welcome to the Designing Course, where creativity meets
+                      functionality! This course is designed to unleash your inner
+                      artist and equip you with the essential skills and knowledge
+                      needed to excel in the field of design. Whether you have a
+                      passion foraic design, web design, or user experience
+                      design, this program will provide you with a solid
+                      foundation to express your ideas and create designs.
+                    </p>
+                  </div>
+                  <div class="card-link">
+                    <a
+                      href="Course/Graphic/index.html"
+                      >Learn More
+                      <svg
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
           <!-- here is the card number 3 -->
 
-          <div class="cards card-3 p-4 card-width">
+          <div class="cards card-3 card-width">
             <div
-              class="h-full border-2 border-gray-800 rounded-lg overflow-hidden"
+              class="card-struct"
             >
               <!-- The image goes here -->
 
-              <img
-                class="card-img lg:h-48 md:h-36 w-full object-cover"
+              <div class="card-img"><img
+                class="card-img"
                 src="Images/C++.png"
                 alt="C++ Course"
               />
+              </div>
 
               <!-- The all text of cards -->
 
-              <div class="all-text p-6">
+              <div class="all-text">
                 <div class="description">
-                  <h1 class="title-font text-lg font-medium text-white mb-3">
+                  <h1 class="card-title">
                     C++ Course
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p>
                     Welcome to the C++ course,This comprehensive course is
                     designed to introduce you to the fundamentals of C++
                     programming language. Throughout this course, you'll dive
@@ -200,13 +213,11 @@
                     essential topics that form the building blocks of C++.
                   </p>
                 </div>
-                <div class="flex items-center justify-end flex-wrap card-link">
+                <div class="card-link">
                   <a
                     href="Course/C++/index.html"
-                    class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0"
                     >Learn More
                     <svg
-                      class="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       stroke-width="2"
@@ -225,43 +236,40 @@
 
           <!-- here is the card number 4 -->
 
-          <div class="cards card-4 p-4 card-width">
+          <div class="cards card-4 card-width">
             <div
-              class="h-full border-2 border-gray-800 rounded-lg overflow-hidden"
+              class="card-struct"
             >
               <!-- The image goes here -->
 
-              <img
-                class="card-img lg:h-48 md:h-36 w-full object-cover"
+              <div class="card-img"><img
+                class="card-img"
                 src="Images/Computer-network.jpg"
                 alt="Computer Networks"
               />
+              </div>
 
               <!-- The all text of cards -->
 
-              <div class="all-text p-6">
+              <div class="all-text">
                 <div class="description">
-                  <h1 class="title-font text-lg font-medium text-white mb-3">
+                  <h1 class="card-title">
                     Computer Networks
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p>
                     This course provides an introduction to computer networks,
-                    with a special focus on the Internet architecture and
-                    protocols. Topics include layered network architectures,
-                    addressing, naming, forwarding, routing, communication
-                    reliability, the client-server model, web and email
-                    protocols. Besides the theoretical foundations, students
+                    with a special focus on the Internet architecture. Topics include layered network architectures,
+                    addressing, forwarding, routing, communication
+                    reliability, the client-server model, web and email. Besides the theoretical, students
                     acquire practical experience by programming reduced versions
                     of real Internet protocols.
                   </p>
                 </div>
-                <div class="flex items-center justify-end flex-wrap card-link">
+                <div class="card-link">
                   <a
                     href="Course/Networking/index.html"
-                    class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0"
                     >Learn More
                     <svg
-                      class="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       stroke-width="2"
@@ -280,29 +288,30 @@
 
           <!-- here is the card number 5 -->
 
-          <div class="cards card-5 p-4 card-width">
+          <div class="cards card-5 card-width">
             <div
-              class="h-full border-2 border-gray-800 rounded-lg overflow-hidden"
+              class="card-struct"
             >
               <!-- The image goes here -->
 
-              <img
-                class="card-img lg:h-48 md:h-36 w-full object-cover"
+              <div class="card-img"><img
+                class="card-img"
                 src="Images/Typing.jpg"
                 alt="Typing Course"
               />
+              </div>
 
               <!-- The all text of cards -->
 
-              <div class="all-text p-6">
+              <div class="all-text">
                 <div class="description">
-                  <h1 class="title-font text-lg font-medium text-white mb-3">
+                  <h1 class="card-title">
                     Typing Course
                     <span style="font-size: 20px;">
                       (English & Urdu)
                     </span>
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p>
                     This course is designed to help you develop touch typing
                     skills in both English and Urdu languages, enabling you to
                     type effortlessly and improve your productivity. Throughout
@@ -312,13 +321,11 @@
                     speed and accuracy.
                   </p>
                 </div>
-                <div class="flex items-center justify-end flex-wrap card-link">
+                <div class="card-link">
                   <a
                     href="Course/Typing/index.html"
-                    class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0"
                     >Learn More
                     <svg
-                      class="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       stroke-width="2"
@@ -342,7 +349,8 @@
 
     <section class="computer-center section3">
       <a href="#" id="about"></a>
-      <h2 class="heading text-gray-400">About Us
+      <div class="about-container">
+      <h2 class="heading">About Us
       </h2>
     <div class="about">
       <p class="paragraph">
@@ -364,9 +372,10 @@
         Whether you are an aspiring programmer, a creative enthusiast, or someone looking to upgrade their skills, Ilmgah Computer Center is the perfect place to nurture your talents. Join us today and embark on an exciting learning journey that will shape your future in the world of technology.
       </p>
     </div>
+  </div>
     </section>
 
-
+    
     <footer>Ilmgah Computer Center 2023 | All rights reserved &copy;</footer>
   </body>
   <script>
@@ -375,5 +384,13 @@
     contact.addEventListener("click", () => {
       window.location.assign('Contact/index.html');
     });
+
+    let menu=document.getElementById("menu");
+    let dropdown=document.getElementById("dropdown-navbar");
+
+    menu.addEventListener("click",()=>{
+      dropdown.classList.toggle("clicked");
+    })
+
   </script>
 </html>

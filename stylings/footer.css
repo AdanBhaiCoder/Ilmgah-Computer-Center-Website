@@ -1,0 +1,11 @@
+/* The style of Footer goes here */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

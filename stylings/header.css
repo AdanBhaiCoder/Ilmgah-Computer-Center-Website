@@ -47,14 +47,14 @@
 
 /*---------------------navbar stylings */
 
-.right-navbar{
+.right-navbar {
     display: flex;
     align-items: center;
 }
 
-.menu-link{
+.menu-link {
     width: 40px;
-    margin-right:20px ;
+    margin-right: 20px;
 }
 
 /*---------------------links stylings */
@@ -85,7 +85,7 @@
     transform: scaleX(0);
     background-color: #000;
     transition: transform .5s;
-    transform-origin:right;
+    transform-origin: right;
 }
 
 .navbar a:hover::before {
@@ -93,30 +93,25 @@
     transform-origin: left;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     font-size: 18.5px;
 }
 
-.menu-link{
+.menu-link {
     display: none;
 }
+
 /* The part of navbar for tablet goes here */
 
 .dropdown {
     display: flex;
-    justify-content:end ;
+    justify-content: end;
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     width: 100%;
     padding: 30px 0;
     transform-origin: top;
     transition: transform .4s ease-in-out;
-}
-
-.dropdown .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .dropdown .navbar .droplinks {
@@ -128,25 +123,28 @@
     border-radius: 10px;
 }
 
-.dropdown .navbar .droplinks{
+.dropdown .navbar .droplinks {
     position: absolute;
     right: 0px;
     top: -60px;
 }
 
-.dropdown.clicked .navbar .droplinks{
+.dropdown.clicked .navbar .droplinks {
     transition-delay: 0.2s;
 }
-.dropdown.clicked .navbar .droplinks:nth-child(2){
-    transition-delay: 0.4s;
-}
-.dropdown.clicked .navbar .droplinks:nth-child(3){
-    transition-delay: 0.6s;
-}
-.dropdown.clicked .navbar .droplinks:nth-child(4){
-    transition-delay: 0.9s;
+
+.dropdown.clicked .navbar .droplinks:nth-child(2) {
+    transition-delay: 0.3s;
 }
 
-.dropdown{
+.dropdown.clicked .navbar .droplinks:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+.dropdown.clicked .navbar .droplinks:nth-child(4) {
+    transition-delay: 0.7s;
+}
+
+.dropdown {
     display: none;
 }

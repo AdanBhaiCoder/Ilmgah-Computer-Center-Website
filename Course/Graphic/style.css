@@ -17,87 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-/*---------------------Navbar ki stylings */
-.header {
-    background-color: #fff;
-    width: 100vw;
-    height: 11vh;
-    position: sticky;
-    top: 0;
-    z-index: 12;
-}
-
-.container-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-
-}
-
-/*---------------------logo styling */
-
-
-.header .logo {
-    position: absolute;
-    left: 30px;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-}
-
-.header .logo img {
-    width: 50px;
-}
-
-.header .logo span {
-    font-size: 25px;
-    font-family: 'Kanit', sans-serif;
-    margin-left: 1.5vw;
-}
-
-/*---------------------navbar stylings */
-
-.container-head .navbar {
-    margin-left: 60vw;
-}
-
-/*---------------------links stylings */
-
-.navbar a {
-    position: relative;
-    color: #000000;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    font-size: 17.8px;
-    text-decoration: none;
-    margin-left: 19px;
-    padding: 5px 10px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-
-}
-
-.navbar a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    height: 2px;
-    border-radius: 5px;
-    width: 100%;
-    transform: scaleX(0);
-    background-color: #000000;
-    transition: transform 0.5s;
-    transform-origin: right;
-}
-
-.navbar a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
 /* -----------------Reset the sections */
 section {
     color: white;
@@ -237,15 +156,4 @@ img#ai {
 
 img#id {
     width: 45px;
-}
-
-/* ------------------The footer goes here */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.8px;
 }

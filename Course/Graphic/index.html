@@ -1,3 +1,6 @@
+
+<!-- This page is for Graphic Designing Course -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,22 +11,34 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../../stylings/header.css">
     <link rel="icon" href="../Images/Logo-icon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="header">
-      <div class="container-head">
+      <div class="container-head active">
         <a class="text-gray-900 logo" href="index.html">
-          <img src="../Images/Logo-icon.ico" alt="" />
+          <img src="../../Logo/Logo-icon.ico" alt="" />
           <span class="logo-text">Ilmgah Computer Center</span>
         </a>
+        <div class="right-navbar">
+          <nav class="navbar main">
+            <a class="links" href="../../index.html">Home</a>
+            <a class="links" href="../../index.html#about">About</a>
+            <a class="links" href="../../index.html#course">Courses</a>
+          </nav>
+          <div class="menu-link" id="menu">
+            <img src="../../Images/menu-outline.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" id="dropdown-navbar">
         <nav class="navbar">
-          <a class="links" href="../../index.html">Home</a>
-          <a class="links" href="../../index.html#about">About</a>
-          <a class="links" href="../../index.html#course">Courses</a>
-          <a class="links" href="#">Timings</a>
+          <a class="droplinks links" href="../../index.html">Home</a>
+          <a class="droplinks links" href="../../index.html#about">About</a>
+          <a class="droplinks links" href="../../index.html#course">Courses</a>
         </nav>
       </div>
     </header>

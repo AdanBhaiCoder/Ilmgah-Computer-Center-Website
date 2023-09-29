@@ -1,10 +1,9 @@
-
 /* The part for landscape mobile screen goes here */
 
 @media (max-width:580px) {
 
     /* Hero section's styling goes here  */
-    
+
     .main-content {
         display: flex;
         flex-direction: column;
@@ -12,14 +11,15 @@
     }
 
     .main-content h1 {
-        font-size: 42px;
+        font-size: 35px;
         text-align: center;
+        line-height: 40px;
     }
 
     .main-content .para {
-        margin-top: 30px;
-        font-size: 20px;
-        line-height: 35px;
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .btn-container {
@@ -30,10 +30,10 @@
     }
 
     .button {
-        width: 400px;
+        width: 280px;
         max-width: 100%;
-        font-size: 20px;
-        padding: 15px 0;
+        font-size: 16px;
+        padding: 10px 0;
     }
 
     /* The 2nd section stylings goes here */
@@ -50,14 +50,14 @@
 
 
     .all-text h1 {
-        font-size: 30px;
+        font-size: 27px;
         line-height: 40px;
         margin-bottom: 12px;
     }
 
     .all-text p {
         font-family: 'poppins', sans-serif;
-        font-size: 19px;
+        font-size: 16px;
         margin-bottom: 12px;
         line-height: 25px;
     }
@@ -69,8 +69,8 @@
     }
 
     .card-link a {
-        padding: 10px 40px;
-        font-size: 18px;
+        padding: 8px 20px;
+        font-size: 16px;
     }
 
 
@@ -80,25 +80,32 @@
         padding: 0px 20px 50px;
     }
 
+    .section3 .heading {
+        font-size: 40px;
+        max-width: 190px;
+        margin-bottom: 40px;
+    }
+
     .section3 .about {
         text-align: center;
     }
 
     .about .paragraph {
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
     }
 
     .about .Question {
-        font-size: 30px;
+        font-size: 28px;
         margin-bottom: 30px;
     }
 
     .about span {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .about .para {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 28px;
     }
 }

@@ -56,8 +56,8 @@ body {
 .main-content .para {
     margin-top: 20px;
     margin-bottom: 40px;
-    line-height: 27px;
-    font-size: 17px;
+    line-height: 30px;
+    font-size: 18px;
     letter-spacing: 1px;
     font-family: 'poppins', sans-serif;
     color: #fff;
@@ -263,7 +263,7 @@ button a:focus {
     font-size: 50px;
     max-width: 250px;
     margin: auto;
-    margin-top: 55px;
+    padding-top: 60px;
     margin-bottom: 55px;
     letter-spacing: 0.5px;
     border-bottom: 2px solid white;
@@ -272,7 +272,6 @@ button a:focus {
 }
 
 .about .paragraph {
-    font-family: 'Kanit', sans-serif;
     margin-bottom: 40px;
     line-height: 40px;
     font-size: 22px;
@@ -297,5 +296,5 @@ button a:focus {
     margin: 10px 0px;
     line-height: 30px;
     letter-spacing: 1px;
-    color: #ccc;
+    color: #ddd;
 }

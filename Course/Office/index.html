@@ -1,116 +1,124 @@
+
+<!-- This page is for Office Mangement Course -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Office Management | Courses</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../../stylings/header.css">
-    <link rel="icon" href="../Images/Logo-icon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container-head">
-        <a class="text-gray-900 logo" href="index.html">
-          <img src="../Images/Logo-icon.ico" alt="" />
-          <span class="logo-text">Ilmgah Computer Center</span>
-        </a>
-        <nav class="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Office Management | Courses</title>
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../stylings/header.css">
+  <link rel="icon" href="../Images/Logo-icon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-head active">
+      <a class="text-gray-900 logo" href="index.html">
+        <img src="../../Logo/Logo-icon.ico" alt="" />
+        <span class="logo-text">Ilmgah Computer Center</span>
+      </a>
+      <div class="right-navbar">
+        <nav class="navbar main">
           <a class="links" href="../../index.html">Home</a>
           <a class="links" href="../../index.html#about">About</a>
           <a class="links" href="../../index.html#course">Courses</a>
-          <a class="links" href="#">Timings</a>
         </nav>
-      </div>
-    </header>
-
-    <!-- This is the head of section -->
-
-    <section>
-      <div class="section-head">
-        <div onclick="window.history.back();" class="back-btn">
-          <svg
-            class="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path class="arrow-line" d="M0 12h19"></path>
-            <path d="M12 5l7 7-7 7"></path>
-          </svg>
-        </div>
-        <div class="heading">
-          <h1>Office Management</h1>
+        <div class="menu-link" id="menu">
+          <img src="../../Images/menu-outline.svg" alt="" />
         </div>
       </div>
-      <!-- This is the body of the Section -->
-      <div class="section1">
-        <p class="overview">
-          Welcome to the Office Management course! This comprehensive program is
-          designed to equip you with the essential skills and knowledge needed
-          to effectively utilize the powerful suite of Microsoft Office
-          applications. In today's digital world, proficiency in programs such
-          as Word, Excel, PowerPoint, and Outlook is highly valued in almost
-          every professional setting. Office management involves overseeing and
-          coordinating a variety of administrative tasks and responsibilities
-          within a workplace. It includes activities such as scheduling,
-          document management, communication coordination, personnel
-          supervision, supply management, and budgeting. Microsoft Excel is a
-          powerful spreadsheet tool utilized for data analysis, budgeting, and
-          task tracking. On the other hand, Microsoft PowerPoint is a
-          presentation software commonly used for creating visually appealing
-          slideshows to communicate information during meetings, presentations,
-          and training sessions. Together, these tools play a crucial role in
-          streamlining office processes and facilitating effective communication
-          within an organization. Ilmgah has helped thousands of people prepare
-          for careers in graphic design. It has a team of experts in the field
-          working on research and development. It gives good education through
-          careers that are known all over the green town and Township area and
-          lead to good jobs.
-        </p>
+    </div>
+    <div class="dropdown" id="dropdown-navbar">
+      <nav class="navbar">
+        <a class="droplinks links" href="../../index.html">Home</a>
+        <a class="droplinks links" href="../../index.html#about">About</a>
+        <a class="droplinks links" href="../../index.html#course">Courses</a>
+      </nav>
+    </div>
+  </header>
 
-        <h2 class="duration">Duration : 3 Months</h2>
+  <!-- This is the head of section -->
 
-        <div class="list-program">
-          <h2 class="list-head">List of Programs :</h2>
-          <div class="vertical-container">
-            <div class="vertical">
-              <div class="horizontal">
-                <div class="content">
-                  <img src="../Images/word.png" alt="" />
-                  <h3>Microsoft Word 2013</h3>
-                </div>
+  <section>
+    <div class="section-head">
+      <div onclick="window.history.back();" class="back-btn">
+        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path class="arrow-line" d="M0 12h19"></path>
+          <path d="M12 5l7 7-7 7"></path>
+        </svg>
+      </div>
+      <div class="heading">
+        <h1>Office Management</h1>
+      </div>
+    </div>
+    <!-- This is the body of the Section -->
+    <div class="section1">
+      <p class="overview">
+        Welcome to the Office Management course! This comprehensive program is
+        designed to equip you with the essential skills and knowledge needed
+        to effectively utilize the powerful suite of Microsoft Office
+        applications. In today's digital world, proficiency in programs such
+        as Word, Excel, PowerPoint, and Outlook is highly valued in almost
+        every professional setting. Office management involves overseeing and
+        coordinating a variety of administrative tasks and responsibilities
+        within a workplace. It includes activities such as scheduling,
+        document management, communication coordination, personnel
+        supervision, supply management, and budgeting. Microsoft Excel is a
+        powerful spreadsheet tool utilized for data analysis, budgeting, and
+        task tracking. On the other hand, Microsoft PowerPoint is a
+        presentation software commonly used for creating visually appealing
+        slideshows to communicate information during meetings, presentations,
+        and training sessions. Together, these tools play a crucial role in
+        streamlining office processes and facilitating effective communication
+        within an organization. Ilmgah has helped thousands of people prepare
+        for careers in graphic design. It has a team of experts in the field
+        working on research and development. It gives good education through
+        careers that are known all over the green town and Township area and
+        lead to good jobs.
+      </p>
+
+      <h2 class="duration">Duration : 3 Months</h2>
+
+      <div class="list-program">
+        <h2 class="list-head">List of Programs :</h2>
+        <div class="vertical-container">
+          <div class="vertical">
+            <div class="horizontal">
+              <div class="content">
+                <img src="../Images/word.png" alt="" />
+                <h3>Microsoft Word 2013</h3>
               </div>
-              <div class="horizontal">
-                <div class="content">
-                  <img src="../Images/excel.png" alt="" />
-                  <h3>Microsoft Excel 2013</h3>
-                </div>
+            </div>
+            <div class="horizontal">
+              <div class="content">
+                <img src="../Images/excel.png" alt="" />
+                <h3>Microsoft Excel 2013</h3>
               </div>
-              <div class="horizontal">
-                <div class="content">
-                  <img src="../Images/ppt.png" alt="" />
-                  <h3>Microsoft PowerPoint 2013</h3>
-                </div>
+            </div>
+            <div class="horizontal">
+              <div class="content">
+                <img src="../Images/ppt.png" alt="" />
+                <h3>Microsoft PowerPoint 2013</h3>
               </div>
-              <div class="horizontal">
-                <div class="content">
-                  <img src="../Images/outlook.png" alt="" />
-                  <h3>Microsoft Outlook</h3>
-                </div>
+            </div>
+            <div class="horizontal">
+              <div class="content">
+                <img src="../Images/outlook.png" alt="" />
+                <h3>Microsoft Outlook</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <footer>Ilmgah Computer Center 2023 | All rights reserved &copy;</footer>
-  </body>
+    </div>
+  </section>
+  <footer>Ilmgah Computer Center 2023 | All rights reserved &copy;</footer>
+</body>
+
 </html>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="stylings/header.css" />
   <link rel="stylesheet" href="stylings/main-styling.css" />
   <link rel="stylesheet" href="stylings/media-query-for-850.css" />
@@ -26,7 +28,6 @@
           <a class="links" href="#">Home</a>
           <a class="links" href="#about">About</a>
           <a class="links" href="#course">Courses</a>
-          <a class="links" href="#">Timings</a>
         </nav>
         <div class="menu-link" id="menu">
           <img src="Images/menu-outline.svg" alt="" />
@@ -324,19 +325,5 @@
 
   <footer>Ilmgah Computer Center 2023 | All rights reserved &copy;</footer>
 </body>
-<script>
-  console.log("Yeh sab kiya dekhna prha ha");
-  let contact = document.getElementById("contact");
-  contact.addEventListener("click", () => {
-    window.location.assign('Contact/index.html');
-  });
-
-  let menu = document.getElementById("menu");
-  let dropdown = document.getElementById("dropdown-navbar");
-
-  menu.addEventListener("click", () => {
-    dropdown.classList.toggle("clicked");
-  })
-</script>
 <script src="script.js"></script>
 </html>

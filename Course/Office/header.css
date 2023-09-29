@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
+
 /*---------------------Navbar ki stylings */
 .header {
     background-color: #fff;
@@ -114,14 +111,12 @@
 }
 
 .dropdown .navbar .droplinks {
-    min-width: 100px;
     background-color: #fff;
     text-align: center;
     font-size: 25px;
     padding: 7px 15px;
-    margin: 5px 10px;
-    transform: skewx(-10deg);
-    background-color: #4fb1e2;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .dropdown .navbar .droplinks {
@@ -176,22 +171,18 @@
 
     .dropdown.clicked .navbar .droplinks:nth-child(1) {
         top: 10px;
-        min-width: 70px;
     }
 
     .dropdown.clicked .navbar .droplinks:nth-child(2) {
         top: 75px;
-        min-width: 80px;
     }
 
     .dropdown.clicked .navbar .droplinks:nth-child(3) {
         top: 140px;
-        min-width: 80px;
     }
 
     .dropdown.clicked .navbar .droplinks:nth-child(4) {
         top: 205px;
-        min-width: 105px;
     }
 }
 

@@ -1,0 +1,59 @@
+/* The media query of header starts from here */
+
+@media (max-width:450px) {
+
+
+    /* The part for landscape mobile screen goes here */
+
+
+    /* Hero section's styling goes here  */
+    .main-content h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .main-content .para {}
+
+    .btn-container {}
+
+    .button {}
+
+    /* The 2nd section stylings goes here */
+    .section2 .heading {}
+
+
+    /* The 3rd section stylings goes here */
+
+    .section3 {
+        padding: 0px 20px 50px;
+    }
+
+    .section3 .heading {
+        font-size: 45px;
+        max-width: 200px;
+        margin-top: 0;
+
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about .paragraph {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .about .Question {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about span {
+        font-size: 25px;
+    }
+
+    .about .para {
+        font-size: 20px;
+    }
+}

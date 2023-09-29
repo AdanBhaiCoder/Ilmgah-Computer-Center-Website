@@ -6,6 +6,12 @@ footer {
     padding: 10px;
     text-align: center;
     font-family: 'Kanit', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 1px;
+    text-transform: capitalize;
+}
+@media (max-width:580px){
+    footer{
+        font-size: 15px;
+    }
 }

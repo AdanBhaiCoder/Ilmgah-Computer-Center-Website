@@ -13,7 +13,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background: rgba(0, 0, 0, 0.6) url('/Images/background.jpg');
+    background: rgba(0, 0, 0, 0.7) url(../Images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: darken;
@@ -23,8 +23,10 @@ body {
 /*---------------The heading of the main Section */
 
 .section1 {
-    height: 100vh;
-    padding-top: 150px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
 }
 
 #course:focus,
@@ -34,27 +36,27 @@ body {
 }
 
 .main-container {
-    max-width: 1500px;
+    width: 1500px;
+    max-width: 100%;
     margin: auto;
-    padding: 0 20px;
 }
 
 .main-content {
-    max-width: 1100px;
+    width: 900px;
+    max-width: 100%;
 }
 
 .main-content h1 {
     font-family: 'Kanit', sans-serif;
-    font-weight: 500;
     font-size: 50px;
     color: #fff;
 }
 
 
 .main-content .para {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
-    line-height: 32px;
+    line-height: 27px;
     font-size: 17px;
     letter-spacing: 1px;
     font-family: 'poppins', sans-serif;
@@ -64,7 +66,7 @@ body {
 /* ----------------Buttons styling */
 .btn-container {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     font-family: 'poppins', sans-serif;
 }
 
@@ -141,11 +143,13 @@ button a:focus {
     flex-wrap: wrap;
     justify-content: center;
 }
-.flex-row{
+
+.flex-row {
     display: flex;
 }
+
 .section2 .card-width {
-    max-width: 444px;
+    max-width: 400px;
     margin-bottom: 10px;
 }
 
@@ -153,6 +157,7 @@ button a:focus {
     border: 2px solid #2d3748;
     border-radius: 8px;
     overflow: hidden;
+    height: 620px;
 }
 
 .card-img {
@@ -168,19 +173,13 @@ button a:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 20px 25px;
+    padding: 0 20px;
+    min-height: 395px;
 }
 
 .description {
     padding-top: 20px;
     padding-bottom: 15px;
-}
-
-.all-text p {
-    font-family: 'poppins', sans-serif;
-    font-size: 15px;
-    margin-bottom: 12px;
-    line-height: 25px;
 }
 
 .all-text h1 {
@@ -192,9 +191,18 @@ button a:focus {
     font-weight: 500;
 }
 
+.all-text p {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 25px;
+    color: #ffffffd1;
+
+}
+
+
 .all-text .card-link {
     display: flex;
-    align-items: end;
     justify-content: end;
 }
 
@@ -202,12 +210,12 @@ button a:focus {
     cursor: pointer;
     color: #000;
     background-color: white;
-    padding: 2.5px 8px;
+    padding: 4px 8px;
     border-radius: 3px;
     display: flex;
     align-items: center;
-    text-decoration:none;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -235,19 +243,25 @@ button a:focus {
 
 
 .section3 {
-    padding: 0 40px;
+    padding: 0px 40px 70px;
 }
-.about-container{
-    max-width: 1400px;
-    margin: auto;
-    padding-top: 20px;
 
+.about-container {
+    max-width: 940px;
+    margin: auto;
+}
+
+.section3 .about {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 0.5px;
+    text-align: start;
 }
 
 .section3 .heading {
     text-align: center;
     font-size: 50px;
-    max-width:250px;
+    max-width: 250px;
     margin: auto;
     margin-top: 55px;
     margin-bottom: 55px;
@@ -257,35 +271,31 @@ button a:focus {
     font-family: 'Kanit', sans-serif;
 }
 
-
-.section3 .about {
-    color: #fff;
-    font-size: 18px;
-    font-family: 'poppins', sans-serif;
+.about .paragraph {
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 40px;
+    line-height: 40px;
+    font-size: 22px;
     text-align: justify;
-    letter-spacing: 0.5px;
 }
 
 .about .Question {
     font-size: 30px;
     margin-bottom: 15px;
+    line-height: 40px;
 }
 
 .about span {
     font-size: 23px;
     color: #eee;
-    font-family: 'Kanit',sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
 }
 
 .about .para {
-    margin: 14px 0;
-    margin-left: 50px;
-    color: #fff;
-}
-
-.about .paragraph {
-    margin: 4vh 0;
-    line-height: 40px;
     font-size: 19px;
+    margin: 10px 0px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ccc;
 }
-

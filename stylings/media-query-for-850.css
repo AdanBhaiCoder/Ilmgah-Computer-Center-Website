@@ -1,32 +1,17 @@
 /* The media query of header starts from here */
 
-@media (max-width:850px) {
+    /* Hero section's styling goes here  */
 
-    /* The part of navbar for tablet goes here */
-
-    .container-head .navbar.main {
-        display: none;
+    .main-content h1 {
+        font-size: 45px;
     }
 
-    .menu-link {
-        display: block;
+    .main-content .para {
+        margin-top: 30px;
+        font-size: 22px;
+        line-height: 40px;
     }
-    
-    .dropdown{
-        display: block;
+
+    .button {
+        font-size: 20px;
     }
-    .dropdown.clicked .navbar .droplinks:nth-child(1){
-        top: 10px;
-    }
-    .dropdown.clicked .navbar .droplinks:nth-child(2){
-        top: 75px;
-    }
-    .dropdown.clicked .navbar .droplinks:nth-child(3){
-        top: 140px;
-    }
-    .dropdown.clicked .navbar .droplinks:nth-child(4){
-        top: 205px;
-    }
-    /* navlinks animations goes here  */
-   
-}

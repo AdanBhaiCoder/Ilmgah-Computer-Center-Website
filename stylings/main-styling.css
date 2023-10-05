@@ -124,7 +124,7 @@ button a:focus {
     margin: auto;
     padding-top: 60px;
     margin-bottom: 40px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #bdbdbd;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -270,7 +270,7 @@ button a:focus {
     padding-top: 60px;
     margin-bottom: 55px;
     letter-spacing: 0.5px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #bdbdbd;
     color: #bdbdbd;
     font-family: 'Kanit', sans-serif;
 }

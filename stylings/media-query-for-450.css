@@ -48,17 +48,17 @@
     }
 
     .cards .card-img {
-        max-height: 140px;
+        max-height: 50vw;
     }
 
     .all-text {
         padding-left: 10px;
         padding-right: 10px;
-        min-height: 380px;
+        min-height: 330px;
     }
 
     .all-text .card-title {
-        font-size: 24px;
+        font-size: 25px;
         line-height: 35px;
     }
 
@@ -68,7 +68,7 @@
     }
 
     .all-text p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 23px;
     }
 
@@ -86,7 +86,7 @@
     .section3 .heading {
         font-size: 35px;
         max-width: 170px;
-        line-height: 40px;
+        line-height: 50px;
         margin-top: 0;
         margin: 0 auto 25px;
     }

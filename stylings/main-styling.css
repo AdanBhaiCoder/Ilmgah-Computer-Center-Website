@@ -157,7 +157,7 @@ button a:focus {
     border: 2px solid #2d3748;
     border-radius: 8px;
     overflow: hidden;
-    height: 620px;
+    min-height: 620px;
 }
 
 .card-img {
@@ -189,6 +189,10 @@ button a:focus {
     margin-bottom: 12px;
     color: white;
     font-weight: 500;
+}
+
+#typing-span {
+    font-size: 20px;
 }
 
 .all-text p {

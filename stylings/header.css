@@ -144,10 +144,6 @@
     transition-delay: 0.18s;
 }
 
-.dropdown.clicked .navbar .droplinks:nth-child(4) {
-    transition-delay: 0.3s;
-}
-
 .dropdown {
     display: none;
 }
@@ -159,9 +155,11 @@
     .header {
         padding: 0px;
     }
+
     .container-head {
-        padding: 10px 20px;
+        padding: 5px 20px;
     }
+
     .header .logo img {
         width: 45px;
     }
@@ -182,25 +180,26 @@
         display: block;
     }
 
+    .dropdown .navbar .droplinks {
+        font-size: 22px;
+        padding: 5px 15px;
+    }
+
     .dropdown.clicked .navbar .droplinks:nth-child(1) {
         top: 10px;
-        min-width: 70px;
+        min-width: 100px;
     }
 
     .dropdown.clicked .navbar .droplinks:nth-child(2) {
         top: 75px;
-        min-width: 80px;
+        min-width: 110px;
     }
 
     .dropdown.clicked .navbar .droplinks:nth-child(3) {
         top: 140px;
-        min-width: 80px;
+        min-width: 120px;
     }
 
-    .dropdown.clicked .navbar .droplinks:nth-child(4) {
-        top: 205px;
-        min-width: 105px;
-    }
 }
 
 /*The part of navbar when it it resize to mobile landscape mode*/
@@ -214,6 +213,22 @@
     .header .logo span {
         font-size: 22px;
     }
+
+    .dropdown.clicked .navbar .droplinks:nth-child(1) {
+        top: 10px;
+        min-width: 70px;
+    }
+
+    .dropdown.clicked .navbar .droplinks:nth-child(2) {
+        top: 70px;
+        min-width: 110px;
+    }
+
+    .dropdown.clicked .navbar .droplinks:nth-child(3) {
+        top: 130px;
+        min-width: 80px;
+    }
+
 }
 
 /*The part of navbar when it it resize to mobile mode*/
@@ -221,7 +236,7 @@
 
 @media (max-width:450px) {
     .container-head {
-        padding: 7px 0;
+        padding: 5px 0;
         padding-left: 10px;
     }
 
@@ -230,10 +245,26 @@
     }
 
     .header .logo span {
-        font-size: 18px;
+        font-size: 17px;
     }
-    .menu-link{
+
+    .menu-link {
         width: 35px;
         margin-right: 10px;
+    }
+
+    .dropdown.clicked .navbar .droplinks:nth-child(1) {
+        top: 10px;
+        min-width: 70px;
+    }
+
+    .dropdown.clicked .navbar .droplinks:nth-child(2) {
+        top: 60px;
+        min-width: 110px;
+    }
+
+    .dropdown.clicked .navbar .droplinks:nth-child(3) {
+        top: 110px;
+        min-width: 120px;
     }
 }

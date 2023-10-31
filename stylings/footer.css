@@ -10,8 +10,21 @@ footer {
     letter-spacing: 1px;
     text-transform: capitalize;
 }
-@media (max-width:580px){
-    footer{
+
+@media (max-width:580px) {
+    footer {
         font-size: 15px;
+    }
+}
+
+@media (max-width:430px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:400px) {
+    footer {
+        font-size: 13px;
     }
 }

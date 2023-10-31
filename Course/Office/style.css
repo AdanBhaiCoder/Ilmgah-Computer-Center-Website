@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -12,167 +8,11 @@ body {
     background: rgba(0, 0, 0, 0.5) url('../Images/office.png');
     background-blend-mode: darken;
     background-position: center;
-    background-attachment:fixed;    
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
 }
-
-/*---------------------Navbar ki stylings */
-.header {
-    background-color: #fff;
-    width: 100vw;
-    height: 12vh;
-    position: sticky;
-    top: 0;
-    z-index: 12;
-}
-
-.container-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-
-}
-
-/*---------------------logo styling */
-
-
-.header .logo {
-    position: absolute;
-    left: 30px;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-}
-
-.header .logo img {
-    width: 50px;
-}
-
-.header .logo span {
-    font-size: 25px;
-    font-family: 'Kanit', sans-serif;
-    margin-left: 1.5vw;
-}
-
-
-/*---------------------navbar stylings */
-
-.container-head .navbar {
-    margin-left: 60vw;
-}
-
-/*---------------------links stylings */
-
-.navbar a {
-    position: relative;
-    color: #000000;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    font-size: 17.8px;
-    text-decoration: none;
-    margin-left: 19px;
-    padding: 5px 10px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-
-}
-
-.navbar a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    height: 2px;
-    border-radius: 5px;
-    width: 100%;
-    transform: scaleX(0);
-    background-color: #000000;
-    transition: transform 0.5s;
-    transform-origin: right;
-}
-
-.navbar a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-/* -----------------Reset the sections */
-section {
-    color: white;
-}
-
-.section1 {
-    margin: 0 70px;
-    backdrop-filter: blur(5px);
-    padding: 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px #000;
-    margin-bottom: 50px;
-}
-
-.section-head {
-    display: flex;
-}
-
-.heading {
-    margin-left: 32vw;
-}
-
-.back-btn {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    width: 4vw;
-    height: 10vh;
-    cursor: pointer;
-}
-
-.back-btn:active svg{
-    color: #ccc;
-}
-.back-btn svg {
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    transform: rotate(180deg);
-}
-
-.heading h1 {
-    display: inline-block;
-    color: #fff;
-    text-align: center;
-    font-size: 55px;
-    letter-spacing: 1px;
-    width: 38vw;
-    padding: 1vh 0;
-    margin-top: 5vh;
-    margin-bottom: 8vh;
-    border-bottom: 2px solid #fff;
-    font-family: 'Kanit', sans-serif;
-    text-shadow: 6px 6px 5px black;
-}
-
-.overview {
-    font-family: 'roboto', sans-serif;
-    line-height: 40px;
-    font-size: 21px;
-    letter-spacing: 1.2px;
-    text-align: justify;
-}
-
-.duration {
-    margin-top: 60px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-}
-
 
 .list-program {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -185,11 +25,8 @@ section {
 }
 
 .vertical-container {
-    display: flex;
-    position: relative;
-    width: 450px;
-    height: 550px;
-    justify-content: center;
+    margin: 30px 0px;
+    padding-left: 150px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -198,14 +35,16 @@ section {
     background-color: white;
     height: 480px;
     margin: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .vertical .horizontal {
     width: 100px;
     background-color: white;
     height: 2px;
-    margin-top: 40px;
-    margin-bottom: 130px;
+    margin-top: 30px;
 }
 
 .horizontal .content {
@@ -213,28 +52,70 @@ section {
     display: flex;
     top: -20px;
     left: 110px;
-    width: 340px;
-    justify-content: space-between;
+    min-width: 340px;
     align-items: center;
 }
 
 .horizontal .content h3 {
-    width: 280px;
     font-size: 23px;
+    margin-left: 10px;
+
 }
 
-.horizontal .content img {
-    width: 46px;
+.content img {
+    width: 50px;
 }
 
+@media (max-width:780px) {
+    .vertical-container {
+        padding-left: 0px;
+    }
+    .horizontal .content{
+        min-width: 280px;
+    }
+}
 
-/* ------------------The footer goes here */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+@media (max-width:480px) {
+    .vertical .horizontal {
+        width: 55px;
+    }
+
+    .horizontal .content {
+        top: -23px;
+        left: 60px;
+    }
+
+    .list-head {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .list-program .vertical {
+        margin: 5px;
+    }
+
+    .vertical .horizontal {
+        width: 20px;
+    }
+
+    .horizontal .content {
+        top: -20px;
+        left: 30px;
+        min-width: 220px;
+        justify-content: start;
+    }
+
+    .list-head {
+        font-size: 20px;
+    }
+
+    .horizontal .content h3 {
+        font-size: 21px;
+        margin-left: 10px;
+    }
+
+    .content img {
+        width: 40px;
+    }
 }

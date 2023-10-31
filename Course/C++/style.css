@@ -15,10 +15,9 @@ body {
 }
 
 /* -----------------Reset the sections */
-.heading h1 {
-    width: 25vw;
+.heading h1{
+    /* width: 350px; */
 }
-
 /* .overview {
     font-family: 'roboto', sans-serif;
     line-height: 40px;

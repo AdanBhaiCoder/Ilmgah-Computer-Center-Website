@@ -4,6 +4,7 @@
     padding: 0;
     font-weight: 500;
 }
+
 section {
     color: white;
 }
@@ -110,7 +111,17 @@ section {
         margin-right: 20px;
         margin-bottom: 30px;
         height: 50vh;
-        overflow: scroll;
+        overflow-y: scroll;
+    }
+
+    .section1::-webkit-scrollbar {
+        background-color: transparent;
+        width: 10px;
+    }
+
+    .section1::-webkit-scrollbar-thumb {
+        background-color: #54a6dc;
+        border-radius: 50px;
     }
 
     .overview {

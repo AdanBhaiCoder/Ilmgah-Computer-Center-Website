@@ -1,123 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    overflow-x: hidden;
     background-color: #2e2e54;
-}
-
-/*---------------------Navbar ki stylings */
-.header {
-    background-color: #fff;
-    width: 100vw;
-    height: 11vh;
-    position: sticky;
-    top: 0;
-    z-index: 12;
-}
-
-.container-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-}
-
-/*--------------logo styling */
-
-
-.header .logo {
-    position: absolute;
-    left: 30px;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-}
-
-.header .logo img {
-    width: 50px;
-}
-
-.header .logo span {
-    font-size: 25px;
-    font-family: 'Kanit', sans-serif;
-    margin-left: 1.5vw;
-}
-
-/*---------------------navbar stylings */
-
-.container-head .navbar {
-    margin-left: 60vw;
-}
-
-/*---------------------links stylings */
-
-.navbar a {
+    overflow-x: hidden;
     position: relative;
-    color: #000000;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    font-size: 17.8px;
-    text-decoration: none;
-    margin-left: 19px;
-    padding: 5px 10px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-
-}
-
-.navbar a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    height: 2px;
-    border-radius: 5px;
-    width: 100%;
-    transform: scaleX(0);
-    background-color: #000000;
-    transition: transform 0.5s;
-    transform-origin: right;
-}
-
-.navbar a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
 }
 
 /* -----------------Reset the sections */
 
-.section1 {
-    margin: 0 10px;
-    margin-bottom: 60px;
-    color: white;
-}
-
-.section-head {
-    display: flex;
-}
-
-.heading {
-    margin-left: 36.5vw;
-}
-
+.section-head {}
 
 .back-btn {
-    display: flex;
     position: fixed;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    width: 4.5vw;
-    height: 7vh;
+    top: 100px;
+    left: 0;
+    margin: 5px;
+    width: 50px;
     cursor: pointer;
+}
+
+.back-btn:active svg {
+    color: #ccc;
 }
 
 .back-btn svg {
@@ -127,64 +33,69 @@ body {
     transform: rotate(180deg);
 }
 
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
 .heading h1 {
-    display: inline-block;
     text-align: center;
     font-size: 60px;
     letter-spacing: 1px;
-    width: 25vw;
     color: white;
     text-shadow: 3px 1px 10px #fff;
-    margin-bottom: 10vh;
+    margin: 20px 0px;
     border-bottom: 2px solid;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
 }
 
+.section1 {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 70px
+}
+
 .container {
-    position: relative;
-    width: 95vw;
-    height: 80vh;
-    margin-left: 15px;
-    margin-bottom: 20px;
     display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+    padding: 0 40px;
 }
 
 .map {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 67vw;
-    height: 100%;
+    width: 70%;
 }
-.googlemap{
-    width: 60vw;
-    height: 70vh;
+
+.googlemap {
+    width: 100%;
+    height: 100%;
     box-shadow: 0 0 30px;
+    border-radius: 5px;
 }
 
 .details {
-    position: absolute;
-    right: 0;
-    width: 27vw;
-    height: 100%;
-    box-sizing: border-box;
+    max-width: 380px;
+    width: 100%;
     border: 2px solid white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: 'poppins', sans-serif;
     box-shadow: 0 0 20px;
+    border-radius: 5px;
+    padding: 100px 20px;
+    gap: 50px;
 }
+
 
 .data-list {
     display: flex;
-    width: 325px;
-    margin-top: 85px;
+    max-width: 350px;
     gap: 5px;
 }
-.icon{
+
+.icon {
     font-size: 27px;
     margin: 0 10px;
 }
@@ -203,19 +114,120 @@ body {
     margin-left: 3px;
 }
 
+@media (max-width:1120px) {
+    .container {
+        max-width: 940px;
+        gap: 50px;
+    }
+
+    .details {
+        max-width: 300px;
+    }
+
+    .map {
+        width: 60%;
+    }
+}
+
+/* The responsiveness of this page goes here for tablet */
+
+@media (max-width:992px) {
+    .back-btn {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .googlemap {
+        height: 400px;
+    }
+
+    .details {
+        max-width: none;
+        width: auto;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .data-list {
+        max-width: 250px;
+        align-items: center;
+    }
+}
 
 
+@media (max-width:850px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+    .data-list {
+        max-width: 500px;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width:600px) {
+    .heading h1 {
+        font-size: 50px;
+    }
+
+    .details {
+        border-radius: 8px;
+    }
+
+    .googlemap {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width:420px) {
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .details {
+        border-radius: 8px;
+    }
+
+    .googlemap {
+        border-radius: 8px;
+    }
+
+    .details {
+        padding: 30px 10px;
+    }
+
+    .data-list {
+        flex-direction: column;
+        align-items: center;
+    }
 
 
+    .data {
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .data-text {
+        font-size: 14px;
+    }
 
 
-/* ------------------The footer goes here */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.8px;
 }

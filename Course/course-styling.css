@@ -5,6 +5,11 @@
     font-weight: 500;
 }
 
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
 section {
     color: white;
 }

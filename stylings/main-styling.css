@@ -19,6 +19,7 @@ body {
     background-attachment: fixed;
     background-blend-mode: darken;
     transition: all 0.5s;
+    position: relative;
 }
 
 /*---------------The heading of the main Section */

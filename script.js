@@ -1,13 +1,12 @@
-
 console.log("Yeh sab kiya dekhna prha ha");
-let menu = document.getElementById("menu");
-let dropdown = document.getElementById("dropdown-navbar");
+let menu = document.querySelector("#menu");
+let dropdown = document.querySelector("#dropdown-navbar");
 
 menu.addEventListener("click", () => {
     dropdown.classList.toggle("clicked");
 })
 
-let contact = document.getElementById("contact");
+let contact = document.querySelector("#contact");
 contact.addEventListener("click", () => {
     window.location.assign('Contact/index.html');
 });
